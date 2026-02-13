@@ -1,9 +1,6 @@
 data/
 
 
-.env
-env
-env/
 
 test/
 
@@ -17,7 +14,6 @@ __pycache__/
 
 .git
 
-.env
 test.ipynb
 riya_private_key.pem
 app_checkpoint.py
@@ -25,9 +21,7 @@ __pycache__
 cron_scheduler.py
 .git
 
-.env
-.env/
-env/
+
 __pycache__/
 *.pyc
 logs/
