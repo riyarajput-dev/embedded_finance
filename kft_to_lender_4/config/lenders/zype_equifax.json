@@ -1,0 +1,12 @@
+{
+    "logic": "AND",
+    "rules": [
+        {
+            "field": "score",
+            "operator": ">=",
+            "value": 650
+        }
+    ],
+    "version": "v0"
+}
+

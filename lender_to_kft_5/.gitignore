@@ -1,0 +1,12 @@
+.env
+.env/
+env/
+__pycache__/
+*.pyc
+logs/
+reports/
+.pem
+private_key.pem 
+riya_private_key.pem 
+api.py
+test_results.txt

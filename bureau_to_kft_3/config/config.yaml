@@ -1,0 +1,19 @@
+database: embed_db_test
+location:
+  batch: batch_12
+  bucket_name: bureau-data-exchange
+  identity_tag: batch_12
+  object_name: bureau-to-kft/equifax
+  stage_name: etl_loader
+name: equifax
+schema: equifax_scrub
+table_name:
+  add_tli: add_tli
+  mode: append
+  pii_master: pii_master
+unloading:
+  field_delimiter: ','
+  file_type: csv
+  max_file_size: 5368709120
+  record_delimiter: ''
+  records_per_file: 30000000

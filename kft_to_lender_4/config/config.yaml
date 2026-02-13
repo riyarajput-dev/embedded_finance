@@ -1,0 +1,9 @@
+database: embed_db_test
+location:
+  bucket_name: lenders-data-exchange
+  folder_name: bureau-to-lender
+  log_file: logs/server_log.log
+  stage_name: lender_stage
+  lender_name: zype-equifax
+schema: lenders_data
+

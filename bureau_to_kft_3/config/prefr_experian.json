@@ -1,0 +1,248 @@
+{
+  "bureau": "experian",
+  "files": {
+    "ADDRESS": {
+      "columns": [
+        {
+          "source": "customer_id",
+          "target": "customer_id"
+        },
+        {
+          "default": "",
+          "source": null,
+          "target": "ADDRESS"
+        },
+        {
+          "source": "pincode",
+          "target": "PINCODE"
+        },
+        {
+          "source": "address_reported_dt",
+          "target": "DATE_REPORTED",
+          "transform": "TO_CHAR(address_reported_dt,'DD/MM/YYYY')"
+        }
+      ],
+      "delimiter": "|",
+      "file_type": "CSV",
+      "source_table": "bureau_test_db.experian_poc.address"
+    },
+    "AR": {
+      "columns": [
+        {
+          "source": "customer_id",
+          "target": "customer_id"
+        },
+        {
+          "source": "acct_key",
+          "target": "ACCT_KEY"
+        },
+        {
+          "source": "account_nb",
+          "target": "ACCOUNT_NB"
+        },
+        {
+          "source": "m_sub_id",
+          "target": "M_SUB_ID"
+        },
+        {
+          "source": "acct_type_cd",
+          "target": "ACCT_TYPE_CD"
+        },
+        {
+          "source": "open_dt",
+          "target": "OPEN_DT",
+          "transform": "TO_CHAR(open_dt,'DD/MM/YYYY')"
+        },
+        {
+          "source": "actual_payment_am",
+          "target": "ACTUAL_PAYMENT_AM"
+        },
+        {
+          "source": "asset_class_cd",
+          "target": "ASSET_CLASS_CD"
+        },
+        {
+          "source": "balance_am",
+          "target": "BALANCE_AM"
+        },
+        {
+          "source": "balance_dt",
+          "target": "BALANCE_DT",
+          "transform": "TO_CHAR(balance_dt,'DD/MM/YYYY')"
+        },
+        {
+          "source": "charge_off_am",
+          "target": "CHARGE_OFF_AM"
+        },
+        {
+          "source": "closed_dt",
+          "target": "CLOSED_DT",
+          "transform": "TO_CHAR(closed_dt,'DD/MM/YYYY')"
+        },
+        {
+          "source": "credit_limit_am",
+          "target": "CREDIT_LIMIT_AM"
+        },
+        {
+          "source": "days_past_due",
+          "target": "DAYS_PAST_DUE"
+        }
+      ],
+      "delimiter": "|",
+      "file_type": "CSV",
+      "source_table": "bureau_test_db.experian_poc.ar"
+    },
+    "EMAIL": {
+      "columns": [
+        {
+          "source": "REFERENCE_NO",
+          "target": "REFERENCE_NOBUREAU_TEST_DB.EXPERIAN_POC.ADDRESS"
+        },
+        {
+          "default": "",
+          "source": null,
+          "target": "EMAIL"
+        },
+        {
+          "default": "",
+          "source": null,
+          "target": "DATE_REPORTED"
+        }
+      ],
+      "delimiter": "|",
+      "file_type": "CSV",
+      "source_table": "bureau_test_db.experian_poc.email"
+    },
+    "ENQ": {
+      "columns": [
+        {
+          "source": "CUSTOMER_ID",
+          "target": "customer_id"
+        },
+        {
+          "source": "inq_purp_cd",
+          "target": "INQ_PURP_CD"
+        },
+        {
+          "source": "m_sub_id",
+          "target": "M_SUB_ID"
+        },
+        {
+          "source": "amount",
+          "target": "AMOUNT"
+        },
+        {
+          "source": "inq_date",
+          "target": "INQ_DATE",
+          "transform": "TO_CHAR(inq_date,'DD/MM/YYYY')"
+        }
+      ],
+      "delimiter": "|",
+      "file_type": "CSV",
+      "source_table": "bureau_test_db.experian_poc.enq"
+    },
+    "ID": {
+      "columns": [
+        {
+          "source": "CUSTOMER_ID",
+          "target": "CUSTOMER_ID"
+        },
+        {
+          "source": "pan",
+          "target": "PAN",
+          "transform": "SHA2(pan)"
+        },
+        {
+          "default": "",
+          "source": null,
+          "target": "PASSPORT"
+        },
+        {
+          "default": "",
+          "source": null,
+          "target": "VOTER_ID"
+        },
+        {
+          "default": "",
+          "source": null,
+          "target": "UID"
+        },
+        {
+          "default": "",
+          "source": null,
+          "target": "RATION_CARD"
+        },
+        {
+          "default": "",
+          "source": null,
+          "target": "DRIVING_LICENSE"
+        }
+      ],
+      "delimiter": "|",
+      "file_type": "CSV",
+      "source_table": "bureau_test_db.experian_poc.id"
+    },
+    "NAME_DOB": {
+      "columns": [
+        {
+          "source": "customer_id",
+          "target": "customer_id"
+        },
+        {
+          "default": "",
+          "source": null,
+          "target": "FULL_NAME"
+        },
+        {
+          "source": "dob",
+          "target": "DOB",
+          "transform": "TO_CHAR(dob,'DD/MM/YYYY')"
+        },
+        {
+          "source": "gender",
+          "target": "GENDER"
+        }
+      ],
+      "delimiter": "|",
+      "file_type": "CSV",
+      "source_table": "bureau_test_db.experian_poc.name_dob"
+    },
+    "PHONE": {
+      "columns": [
+        {
+          "source": "CUSTOMER_ID",
+          "target": "CUSTOMER_ID"
+        },
+        {
+          "default": "",
+          "source": null,
+          "target": "PHONE"
+        },
+        {
+          "default": "",
+          "source": null,
+          "target": "DATE_REPORTED"
+        }
+      ],
+      "delimiter": "|",
+      "file_type": "CSV",
+      "source_table": "bureau_test_db.experian_poc.phone"
+    },
+    "SCORE": {
+      "columns": [
+        {
+          "source": "customer_id",
+          "target": "customer_id"
+        },
+        {
+          "source": "score",
+          "target": "SCORE_V3"
+        }
+      ],
+      "delimiter": "|",
+      "file_type": "CSV",
+      "source_table": "bureau_test_db.experian_poc.score"
+    }
+  },
+  "lender_code": "'prefr'"
+}

@@ -1,0 +1,13 @@
+database: embed_db_test
+location:
+  bucket_name: bureau-data-exchange
+  folder_name: kft-to-bureau
+  response_folder: bureau-to-kft
+  equifax_response_object: equifax
+  object_name: equifax
+  partner_name: digit-money
+  log_file: kft-to-bureau/equifax/logs/server_log.log
+  stage_name: kft_bureau
+schema: partners_data
+
+

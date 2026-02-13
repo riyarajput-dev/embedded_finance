@@ -1,0 +1,14 @@
+.env
+.env/
+env/
+__pycache__/
+*.pyc
+logs/
+reports/
+.pem
+private_key.pem 
+riya_private_key.pem 
+processed_files_status.json
+ar.txt
+sync_lender_configs.py
+api.py

@@ -1,0 +1,11 @@
+database: embed_db_test
+location:
+  bucket_name: partners-data-exchange
+  folder_name: digit-money
+  fetch_object_name: dm-to-kft
+  log_file: digit-money/dm-to-kft/logs/server_log.log
+  push_object_name: kft-to-dm
+  stage_name: partner_kft
+schema: partners_data
+phone_table: KFT_PHONE_BASE.PHONE
+

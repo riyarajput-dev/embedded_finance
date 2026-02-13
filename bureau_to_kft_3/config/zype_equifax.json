@@ -1,0 +1,295 @@
+{
+  "bureau": "equifax",
+  "files": {
+    "ADDRESS": {
+      "columns": [
+        {
+          "source": "REFERENCE_NO",
+          "target": "CUSTOMER_ID" 
+        },
+        {
+          "source": "MATCHED_ACCT_NBR",
+          "target": "MATCHED_ACCT_NBR"
+        },
+        {
+          "source": "EMAIL_ADDR_1",
+          "target": "EMAIL_ADDR_1"
+        },
+        {
+          "source": "PHN_NBR",
+          "target": "PHN_NBR"
+        },
+        {
+          "source": "PHN_NBR_2",
+          "target": "PHN_NBR_2"
+        },
+        {
+          "source": "PHN_NBR_3",
+          "target": "PHN_NBR_3"
+        },
+        {
+          "source": "ADDR_LN",
+          "target": "ADDR_LN"
+        },
+        {
+          "source": "ADDR_LN_2",
+          "target": "ADDR_LN_2"
+        },
+        {
+          "source": "ADDR_LN_3",
+          "target": "ADDR_LN_3"
+        },
+        {
+          "source": "ADDR_ST",
+          "target": "ADDR_ST"
+        },
+        {
+          "source": "ADDR_ST_2",
+          "target": "ADDR_ST_2"
+        },
+        {
+          "source": "ADDR_ST_3",
+          "target": "ADDR_ST_3"
+        },
+        {
+          "source": "ADDR_1_CTY",
+          "target": "ADDR_1_CTY"
+        },
+        {
+          "source": "ADDR_1_ZIP",
+          "target": "ADDR_1_ZIP"
+        },
+        {
+          "source": "ADDR_2_ZIP",
+          "target": "ADDR_2_ZIP"
+        },
+        {
+          "source": "ADDR_3_ZIP",
+          "target": "ADDR_3_ZIP"
+        },
+        {
+          "source": "ACCT_UNIQ_ID",
+          "target": "ACCT_UNIQ_ID"
+        },
+        {
+          "source": "REC_SEQ_NBR",
+          "target": "REC_SEQ_NBR"
+        },
+        {
+          "source": "MATCHED_CSMR_NBR",
+          "target": "MATCHED_CSMR_NBR"
+        },
+        {
+          "source": "PAN",
+          "target": "PAN"
+        },
+        {
+          "source": "PASSPORT",
+          "target": "PASSPORT"
+        },
+        {
+          "source": "VOTER",
+          "target": "VOTER"
+        },
+        {
+          "source": "DL",
+          "target": "DL"
+        },
+        {
+          "source": "ADHAR",
+          "target": "ADHAR"
+        },
+        {
+          "source": "IN_NAME",
+          "target": "IN_NAME"
+        },
+        {
+          "source": "ROUTE_FLG",
+          "target": "ROUTE_FLG"
+        },
+        {
+          "source": "AGE",
+          "target": "AGE"
+        },
+        {
+          "source": "GENDER_CD",
+          "target": "GENDER_CD"
+        },
+        {
+          "source": "ADDR_2_CHNG_DT",
+          "target": "ADDR_2_CHNG_DT"
+        },
+        {
+          "source": "ADDR_1_CHNG_DT",
+          "target": "ADDR_1_CHNG_DT"
+        },
+        {
+          "source": "BRTH_DT",
+          "target": "BRTH_DT"
+        },
+        {
+          "source": "EMAIL_ADDR_1_DT_RPTED",
+          "target": "EMAIL_ADDR_1_DT_RPTED"
+        },
+        {
+          "source": "ADDR_3_CHNG_DT",
+          "target": "ADDR_3_CHNG_DT"
+        }
+      ],
+      "delimiter": "|",
+      "file_type": "CSV",
+      "source_table": "embed_test.equifax.pii"
+    },
+    "AR": {
+      "columns": [
+        {
+          "source": "REFERENCE_NO", 
+          "target": "CUSTOMER_ID"
+        },
+        {
+          "source": "ACCT_UNIQ_ID",
+          "target": "ACCT_UNIQ_ID"
+        },
+        {
+          "source": "ACCOUNTSTATUS",
+          "target": "ACCOUNTSTATUS"
+        },
+        {
+          "source": "ACCOUNTTYPE",
+          "target": "ACCOUNTTYPE"
+        },
+        {
+          "source": "BALANCE",
+          "target": "BALANCE"
+        },
+        {
+          "source": "SANCTIONAMOUNT",
+          "target": "SANCTIONAMOUNT"
+        },
+        {
+          "source": "CREDITLIMIT",
+          "target": "CREDITLIMIT"
+        },
+        {
+          "source": "DATECLOSED",
+          "target": "DATECLOSED"
+        },
+        {
+          "source": "DATEOPENED",
+          "target": "DATEOPENED"
+        },
+        {
+          "source": "DATEREPORTED",
+          "target": "DATEREPORTED"
+        },
+        {
+          "source": "HIGHCREDIT",
+          "target": "HIGHCREDIT"
+        },
+        {
+          "source": "INSTALLMENTAMOUNT",  
+          "target": "INSTALLMENTAMOUNT"
+        },
+        {
+          "source": "INTERESTRATE",
+          "target": "INTERESTRATE"
+        },
+        {
+          "source": "LASTPAYMENT",
+          "target": "LASTPAYMENT"
+        },
+        {
+          "source": "LASTPAYMENTDATE",
+          "target": "LASTPAYMENTDATE"
+        },
+        {
+          "source": "OWNERSHIPTYPE",
+          "target": "OWNERSHIPTYPE"
+        },
+        {
+          "source": "PASTDUEAMOUNT",
+          "target": "PASTDUEAMOUNT"
+        },
+        {
+          "source": "REPAYMENTTENURE",
+          "target": "REPAYMENTTENURE"
+        },
+        {
+          "source": "TERMFREQUENCY",
+          "target": "TERMFREQUENCY"
+        },
+        {
+          "source": "TERMS_FREQUENCY",
+          "target": "TERMS_FREQUENCY"
+        },
+        {
+          "source": "SUITFILEDSTATUS",
+          "target": "SUITFILEDSTATUS"
+        },
+        {
+          "source": "WRITEOFFAMOUNT",
+          "target": "WRITEOFFAMOUNT"
+        },
+        {
+          "source": "ACCOUNTSTATUS_HISTORY",
+          "target": "ACCOUNTSTATUS_HISTORY"
+        },
+        {
+          "source": "ASSETCLASS_HISTORY",
+          "target": "ASSETCLASS_HISTORY"
+        },
+        {
+          "source": "SUITFILED_HISTORY",
+          "target": "SUITFILED_HISTORY"
+        },
+        {
+          "source": "SCORE",
+          "target": "SCORE"
+        },
+        {
+          "source": "SECTOR",
+          "target": "SECTOR"
+        },
+        {
+          "source": "DAYS_PAST_DUE",
+          "target": "DAYS_PAST_DUE"
+        }
+      ],
+      "delimiter": "|",
+      "file_type": "CSV",
+      "source_table": "embed_test.equifax.ar"
+    },
+    "ENQ": {
+      "columns": [
+        {
+          "source": "REFERENCE_NO",
+          "target": "CUSTOMER_ID"
+        },
+        {
+          "source": "TRAN_ID",
+          "target": "TRAN_ID"
+        },
+        {
+          "source": "INQ_TIME",
+          "target": "INQ_TIME"
+        },
+        {
+          "source": "TRAN_AMT",
+          "target": "TRAN_AMT"
+        },
+        {
+          "source": "INQ_PURPOSE",
+          "target": "INQ_PURPOSE"
+        },
+        {
+          "source": "SECTOR",
+          "target": "SECTOR"
+        }
+      ],
+      "delimiter": "|",
+      "file_type": "CSV",
+      "source_table": "embed_test.equifax.enq"
+    }
+  },
+  "lender_code": "zype"
+}

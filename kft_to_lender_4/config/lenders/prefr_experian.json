@@ -1,0 +1,21 @@
+{
+    "logic": "AND",
+    "rules": [
+        {
+            "field": "score",
+            "operator": ">=",
+            "value": 690
+        },
+        {
+            "field": "nbr_cc",
+            "operator": ">=",
+            "value": 1
+        },
+        {
+            "field": "dpd_m03_all",
+            "operator": "=",
+            "value": 30
+        }
+    ],
+    "version": "v0"
+}
